@@ -660,6 +660,14 @@ footer {
 	.cart-item {
 		gap: 10px;	
 	}
+	.logo-nav {
+		width: 50px;
+	}
+
+	.contador {
+		font-size: 12px;
+		top: -9px;
+	}
 }
 @media (max-width: 349px) {
   .category {
