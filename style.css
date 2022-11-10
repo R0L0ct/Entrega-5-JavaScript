@@ -731,11 +731,9 @@ footer {
     top: -9px;
   }
   .addProduct-msg {
-    font-size: 16px;
+		height: 30px;
+    font-size: 10px;
   }
-	.galeria {
-    /* grid-template-columns: repeat(auto-fit, minmax(95px, 190px)); */
-	}
 }
 @media (max-width: 349px) {
   .category {
