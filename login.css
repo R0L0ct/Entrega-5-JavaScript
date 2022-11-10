@@ -185,6 +185,9 @@ header {
 	.span-registrar {
 		font-size: 17px;
 	}
+.error {
+	font-size: 15px;
+}
 }
 
 @media (max-width: 500px) {
@@ -213,4 +216,8 @@ header {
 	.span-registrar {
 		font-size: 12px;
 	}
+
+.error {
+	font-size: 10px;
+}
 }
