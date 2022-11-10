@@ -537,7 +537,7 @@ footer {
 
 @media (max-width: 969px) {
 	header {
-		height: 50px;
+		height: 60px;
 	}
   .menu-hamburguesa {
     display: flex;
@@ -546,7 +546,7 @@ footer {
 
   nav {
     position: fixed;
-    top: 100px;
+    top: 60px;
     left: 0;
     background-color: #fefefe;
     width: 100%;
@@ -567,6 +567,10 @@ footer {
     flex-direction: column;
   }
 
+	.nav-li {
+		font-size: 12px;
+	}
+
   .toggle-menu {
     display: none;
   }
@@ -586,9 +590,14 @@ footer {
   }
 
 	#galeria-container {
-		padding-top: 50px;
+		padding-top: 25px;
 	}
-
+	#rutinas-container {
+		padding-top: 25px;
+	}
+	#tienda-container {
+		padding-top: 65px;
+	}
   .product:hover {
     transform: scale(1);
   }
@@ -846,10 +855,6 @@ footer {
     border: none;
     border-radius: 0px;
     border-bottom: 3px solid #48a221;
-  }
-
-  .nav-li {
-    font-size: 15px;
   }
 
   .item-handler span {
