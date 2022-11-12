@@ -94,8 +94,8 @@ header img {
 
 .category {
   border: none;
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 130px;
   border-radius: 20px;
   cursor: pointer;
   display: flex;
@@ -103,7 +103,7 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -542,7 +542,7 @@ footer {
   position: absolute;
   top: -12px;
   right: 8px;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
 }
 
