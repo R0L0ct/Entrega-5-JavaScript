@@ -16,7 +16,9 @@ const menuHamburguesa = document.querySelector(".menu-hamburguesa");
 const navMenu = document.querySelector(".nav-menu");
 const navUl = document.querySelector(".nav-ul");
 const contador = document.querySelector(".contador");
-const addProductMsg = document.querySelector(".addProduct-msg") 
+const addProductMsg = document.querySelector(".addProduct-msg");
+const btnBuy = document.querySelector(".btn-buy");
+const spnVaciar = document.querySelector(".spn-vaciar");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -266,12 +268,12 @@ const addUnit = (producto) => {
 };
 
 const confimationMsg = () => {
-	addProductMsg.classList.remove("show-msg")
+  addProductMsg.classList.remove("show-msg");
 
-	setTimeout(function(){
-	addProductMsg.classList.add("show-msg")
-	},2000)
-}
+  setTimeout(function () {
+    addProductMsg.classList.add("show-msg");
+  }, 2000);
+};
 
 const addProduct = (e) => {
   if (!e.target.classList.contains("btn-add")) return;
@@ -393,6 +395,22 @@ const counter = () => {
   contador.textContent = quantity;
 };
 
+const buyCart = () => {
+	if(!cart.length) return;
+  alert("Compra completada");
+  cart = [];
+  checkCartState();
+};
+
+const vaciarCarrito = () => {
+	if(!cart.length) return;
+  if (!window.confirm("Desea vaciar el carrito?")) {
+    return;
+  }
+  cart = [];
+  checkCartState();
+};
+
 function init() {
   categories.addEventListener("click", applyFilter);
   window.addEventListener("DOMContentLoaded", renderDefaultProduct);
@@ -407,6 +425,8 @@ function init() {
   cartContainer.addEventListener("click", handleQuantity);
   menuHamburguesa.addEventListener("click", toggleMenu);
   navUl.addEventListener("click", hideNavMenu);
+  btnBuy.addEventListener("click", buyCart);
+  spnVaciar.addEventListener("click", vaciarCarrito);
 }
 
 init();
