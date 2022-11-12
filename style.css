@@ -217,7 +217,7 @@ header img {
 }
 
 .galeria img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #rutinas-container {
@@ -667,7 +667,8 @@ footer {
   }
 
   .cart-item {
-    gap: 0px;
+    gap: 10px;
+		width: 400px;
   }
 
   .cart-tittle {
@@ -715,13 +716,13 @@ footer {
     gap: 10px;
   }
   .category {
-    width: 100px;
-    height: 100px;
-    font-size: 12px;
+    width: 80px;
+    height: 80px;
+    font-size: 10px;
     gap: 5px;
   }
   .btn-icon {
-    width: 30px;
+    width: 25px;
   }
   .tienda-tittle,
   .galeria-tittle,
@@ -744,20 +745,21 @@ footer {
     width: 80px;
   }
   .item-tittle {
-    font-size: 15px;
+    font-size: 12px;
   }
   .item-description {
-    font-size: 12px;
+    font-size: 10px;
   }
   .item-price {
     font-size: 12px;
   }
   .quantity-handler {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
+		font-size: 20px;
   }
   .item-quantity {
-    font-size: 17px;
+    font-size: 12px;
   }
   .cart-item {
     gap: 10px;
@@ -776,12 +778,13 @@ footer {
   }
 
 	.total-tittle,.total-price {
-		font-size: 20px;
+		font-size: 17px;
 	}
 
-	.cart-menu p {
-		font-size: 15px;
-	}
+  .cart-item {
+    gap: 3px;
+		width: 310px;
+  }
 
 	.btn-buy {
 		font-size: 15px;
@@ -800,8 +803,6 @@ footer {
 		border: 2px solid #48a221;
 	}
 
-}
-@media (max-width: 349px) {
   .category {
     width: 70px;
     height: 70px;
@@ -812,7 +813,28 @@ footer {
   .btn-icon {
     width: 20px;
   }
+  .logo-footer {
+    width: 60px;
+  }
 
+	.contacto-container h3 {
+		font-size: 15px;
+	}
+	
+	.nav-menu {
+		border-left: none;
+		border-right: none;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+
+	.subtotal p {
+		font-size: 15px;
+	}
+
+
+}
+@media (max-width: 349px) {
   .logo-nav {
     display: none;
   }
@@ -822,10 +844,10 @@ footer {
   }
 
   .rutina {
-    padding: 4px;
+    padding: 5px;
     max-width: 95px;
     min-height: 150px;
-    gap: 5px;
+    gap: 7px;
     box-shadow: 1px 1px 3px;
   }
 
@@ -843,9 +865,9 @@ footer {
   }
 
   .product {
-    padding: 5px;
+    padding: 10px;
     max-width: 95px;
-    gap: 5px;
+    gap: 7px;
     box-shadow: 1px 1px 3px;
   }
   .product p {
@@ -886,8 +908,8 @@ footer {
   .cart-item {
     flex-direction: column;
     gap: 10px;
-    width: 150px;
-    padding: 10px 10px;
+    width: 110px;
+    padding: 10px 0 10px 0;
   }
 
   .item-tittle {
@@ -944,9 +966,12 @@ footer {
     width: 80px;
   }
 
-  .item-info {
+  .item-price {
     display: none;
   }
+	.item-description {
+		display: none;
+	}
 
   .empty-cart {
     font-size: 17px;
@@ -961,5 +986,14 @@ footer {
 		grid-template-columns: repeat(auto-fit, minmax(95px, 95px));
 		column-gap: 2px;
     row-gap: 2px;
+	}
+
+	.tienda-tittle,.galeria-tittle,.rutina-tittle {
+		font-size: 17px;
+	}
+
+	footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
 	}
 }

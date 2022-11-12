@@ -192,9 +192,12 @@ const closeOnClick = () => {
 };
 
 const closeOnScroll = () => {
+	navMenu.classList.add("toggle-menu")
   cartMenu.classList.add("toggle-cart");
   overlay.classList.add("show-overlay");
 };
+
+
 
 const renderRoutine = () => {
   const productList = productData.filter(
